@@ -1,0 +1,64 @@
+<p>
+first-demo works!
+</p>
+
+<p> 
+  <span class="label"> {{ match[0].so[0].gk }} </span>    
+  <span> &nbsp; &nbsp; | &nbsp; &nbsp;</span>
+  <button class="label" > 
+      <span>   grec.fields.groupKey  </span>
+  </button>
+</p>
+
+<h4> {{message}} </h4>
+
+  <ul class="heroes">
+    <li *ngFor="let grec of getRecs">
+    <h3>TEAM  {{ grec.fields.Team }} 
+      <span> &nbsp; &nbsp; :: &nbsp; &nbsp;</span>
+      Win$: {{ grec.fields.win$ }}
+    </h3>
+
+    <ul class="heroes">
+      <li *ngFor="let hero of match">
+        <button>   
+              <span>{{ hero.so[0].gk }}</span>
+        </button>
+        <span> &nbsp; &nbsp; | &nbsp; &nbsp;</span>
+        <span class="name">{{ hero.so[0].ww }} </span>  </li>
+      </ul>
+    
+  </li>
+</ul>
+
+
+<!-- 
+<ul class="heroes">
+  <li *ngFor="let grec of getRecs">
+  <h3>TEAM  {{ grec.fields.Team }} 
+    <span> &nbsp; &nbsp; :: &nbsp; &nbsp;</span>
+    Win$: {{ grec.fields.win$ }}
+  </h3>
+  
+  <p> 
+  <span class="label"> {{ match[0].so[0].gk }} </span>    
+  <span> &nbsp; &nbsp; | &nbsp; &nbsp;</span>
+  <button (click)="share()">    
+      <span>  {{ grec.fields.groupKey }} </span>
+  </button>
+  
+  </p>
+  
+  <ul class="heroes">
+  <li *ngFor="let hero of match">
+    <button (click)="share()">    
+          <span>{{ hero.so[0].gk }}</span>
+    </button>
+    <span> &nbsp; &nbsp; | &nbsp; &nbsp;</span>
+    <span class="name">{{ hero.so[0].ww }} </span>  </li>
+  </ul>
+  
+  </li>
+  </ul>
+
+ -->
