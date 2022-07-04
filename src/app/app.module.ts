@@ -15,11 +15,11 @@ import { SessionService } from './services/session.service';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
-import { CrisisListComponent } from './crisis-list/crisis-list.component';
-import { HeroesListComponent } from './heroes-list/heroes-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HelloComponent } from './hello.component';
 import { FirstDemoComponent } from './first-demo/first-demo.component'
+import { CrisisListComponent } from './crisis-list/crisis-list.component';
+import { HeroesListComponent } from './heroes-list/heroes-list.component';
 
 @NgModule({
   imports:  [ BrowserModule,     BrowserAnimationsModule,
@@ -33,15 +33,15 @@ import { FirstDemoComponent } from './first-demo/first-demo.component'
       {path: '', redirectTo: '/heroes-list', pathMatch: 'full'},
       {path: '**', component: PageNotFoundComponent}
   ],
-  declarations: [AppComponent, // DialogContentComponent, 
+  declarations: [AppComponent, DialogContentComponent, 
     HelloComponent, FirstDemoComponent,
     CrisisListComponent,
     HeroesListComponent,
     PageNotFoundComponent
   ],
-//  entryComponents: [DialogContentComponent],
+  entryComponents: [DialogContentComponent],
   providers: [SessionService],
-  bootstrap:    [ AppComponent ]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
 
