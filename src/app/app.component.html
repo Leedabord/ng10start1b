@@ -1,11 +1,57 @@
 
 <nav>
-<img mat-card-avatar 
+<h3> <img mat-card-avatar 
 src="https://media.istockphoto.com/vectors/vector-cartoon-of-happy-golf-ball-with-clubs-and-cart-vector-id486710150"  alt="Golf">    
-Social Golf Tribe - Skins Match 
+ Social Golf Tribe - Skins Match </h3>
 <hr>
 <p> </p>
+
+	<mat-grid-list cols="12" rowHeight="40px">
+	<mat-grid-tile  [colspan]="3"  [rowspan]="1">
+  <a class="button"
+     routerLink="/crisis-list"
+     routerLinkActive="activebutton"
+     ariaCurrentWhenActive="page">
+    Crisis Center
+  </a>	
+	</mat-grid-tile>
+	<mat-grid-tile  [colspan]="3"  [rowspan]="1">
+  <a class="button"
+     routerLink="/heroes-list"
+     routerLinkActive="activebutton"
+     ariaCurrentWhenActive="page">
+    Heroes
+  </a>	</mat-grid-tile>
+	<mat-grid-tile  [colspan]="3"  [rowspan]="1">
+	<button mat-raised-button  color="primary"      routerLink="/heroes-list"
+	routerLinkActive="activebutton" 
+(click)="tempfn()">Post Score</button> 
+	</mat-grid-tile>
+	<mat-grid-tile  [colspan]="3"  [rowspan]="1">
+	<button mat-raised-button  color="primary"  (click)="tempfn()">Post Score</button> 
+	</mat-grid-tile>
+</mat-grid-list>
+
+	<hr>
+	<p> </p>
 </nav>
+
+<router-outlet></router-outlet>
+
+<div style="display: none;">
+<!-- This HTML represents the initial state for the tutorial. It is not intended to appear in the app. -->
+<app-crisis-list></app-crisis-list>
+<app-heroes-list></app-heroes-list>
+
+<!-- This HTML snippet is for when the user first adds the routerlink navigation. -->
+<nav>
+  <a class="button" routerLink="/crisis-list">Crisis Center</a> |
+  <a class="button" routerLink="/heroes-list">Heroes</a>
+</nav>
+
+
+</div>
+
 
 <div  *ngFor="let tt of Teams; let ii = index" > 
 <mat-card>
