@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, VERSION } from '@angular/core';
 
 @Component({
   selector: 'app-crisis-list',
@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./crisis-list.component.css']
 })
 export class CrisisListComponent {
-
+  name = 'Angular ' + VERSION.major;
 }
 
 

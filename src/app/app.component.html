@@ -7,23 +7,6 @@ Social Golf Tribe - Skins Match
 <p> </p>
 </nav>
 
-<hello name="{{ name }}"></hello>
-<p>
-	Hey {{currentUser}}, Start editing to see some magic happen :)
-
-	<!--  -->
-<br>	{{ message }}
-<button (click)="newMessage()">New Message</button>
-</p>
-
-<mat-form-field class="example-full-width">
-	<mat-label>Favorite food</mat-label>
-	<input matInput placeholder="Ex. Pizza" value="Sushi">
-  </mat-form-field>
-
-
-<app-first-demo></app-first-demo>
-
 <div  *ngFor="let tt of Teams; let ii = index" > 
 <mat-card>
 <mat-card-content>
