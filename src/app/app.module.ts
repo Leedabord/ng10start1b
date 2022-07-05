@@ -32,6 +32,7 @@ import { HeroesListComponent } from './heroes-list/heroes-list.component';
       {path: 'heroes-list', component: HeroesListComponent},
       {path: '', redirectTo: '/heroes-list', pathMatch: 'full'},
       {path: '**', component: PageNotFoundComponent}
+    ])
   ],
   declarations: [AppComponent, DialogContentComponent, 
     HelloComponent, FirstDemoComponent,
@@ -46,6 +47,21 @@ import { HeroesListComponent } from './heroes-list/heroes-list.component';
 export class AppModule { }
 
 /*
+
+    RouterModule.forRoot([
+      {path: 'crisis-list', component: CrisisListComponent},
+      {path: 'heroes-list', component: HeroesListComponent},
+      {path: '', redirectTo: '/heroes-list', pathMatch: 'full'},
+      {path: '**', component: PageNotFoundComponent}
+  declarations: [AppComponent, DialogContentComponent, 
+    HelloComponent, FirstDemoComponent,
+    CrisisListComponent,
+    HeroesListComponent,
+    PageNotFoundComponent
+  ],
+  entryComponents: [DialogContentComponent],
+  providers: [SessionService],
+
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at https://angular.io/license
