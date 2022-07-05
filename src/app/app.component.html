@@ -4,35 +4,16 @@
 src="https://media.istockphoto.com/vectors/vector-cartoon-of-happy-golf-ball-with-clubs-and-cart-vector-id486710150"  alt="Golf">    
  Social Golf Tribe - Skins Match </h3>
 <hr>
-<p> </p>
+<h4>TEAMS:: </h4> 
 
-	<mat-grid-list cols="12" rowHeight="40px">
-	<mat-grid-tile  [colspan]="3"  [rowspan]="1">
+	<mat-grid-list cols="12" rowHeight="20px">
+	<mat-grid-tile  *ngFor="let tt of Teams; let ii = index" 
+	 [colspan]="3"  [rowspan]="1">
 	<button mat-raised-button  color="primary" 
 	routerLink="/crisis-list"
 	routerLinkActive="activebutton"
 	(click)="tempfn()">
-	Crisis Center
-	</button> 
-	</mat-grid-tile>
-	<mat-grid-tile  [colspan]="3"  [rowspan]="1">
-  <a class="button"
-     routerLink="/heroes-list"
-     routerLinkActive="activebutton"
-     ariaCurrentWhenActive="page">
-    Heroes
-  </a>	</mat-grid-tile>
-	<mat-grid-tile  [colspan]="3"  [rowspan]="1">
-	<button mat-raised-button  color="primary"      routerLink="/heroes-list"
-	routerLinkActive="activebutton" 
-(click)="tempfn()">Post Score</button> 
-	</mat-grid-tile>
-	<mat-grid-tile  [colspan]="3"  [rowspan]="1">
-	<button mat-raised-button  color="primary" 
-	routerLink="/crisis-list"
-	routerLinkActive="activebutton"
-	(click)="tempfn()">
-	Post Score
+	{{ii+1}} {{tt.tag}} 
 	</button> 
 	</mat-grid-tile>
 </mat-grid-list>
