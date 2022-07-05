@@ -8,12 +8,12 @@ src="https://media.istockphoto.com/vectors/vector-cartoon-of-happy-golf-ball-wit
 
 	<mat-grid-list cols="12" rowHeight="40px">
 	<mat-grid-tile  [colspan]="3"  [rowspan]="1">
-  <a class="button"
-     routerLink="/crisis-list"
-     routerLinkActive="activebutton"
-     ariaCurrentWhenActive="page">
-    Crisis Center
-  </a>	
+	<button mat-raised-button  color="primary" 
+	routerLink="/crisis-list"
+	routerLinkActive="activebutton"
+	(click)="tempfn()">
+	Crisis Center
+	</button> 
 	</mat-grid-tile>
 	<mat-grid-tile  [colspan]="3"  [rowspan]="1">
   <a class="button"
@@ -28,7 +28,12 @@ src="https://media.istockphoto.com/vectors/vector-cartoon-of-happy-golf-ball-wit
 (click)="tempfn()">Post Score</button> 
 	</mat-grid-tile>
 	<mat-grid-tile  [colspan]="3"  [rowspan]="1">
-	<button mat-raised-button  color="primary"  (click)="tempfn()">Post Score</button> 
+	<button mat-raised-button  color="primary" 
+	routerLink="/crisis-list"
+	routerLinkActive="activebutton"
+	(click)="tempfn()">
+	Post Score
+	</button> 
 	</mat-grid-tile>
 </mat-grid-list>
 
