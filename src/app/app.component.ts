@@ -67,23 +67,29 @@ export class AppComponent  implements OnInit, OnDestroy {
     { name: 'Warn', color: 'warn' }
   ];
 
+  public match = {when: "", where: ""};
+
   public Teams = [ 
-    {tag: "LIV", wins: 0, bonus: 0, skins: 0, tsf9: 0, tsb9: 0, tsr18: 0, 
+    { utilkey: "sgt-when-where", 
+    tag: "LIV", wins: 0, bonus: 0, skins: 0, tsf9: 0, tsb9: 0, tsr18: 0, 
     hw: [false,false,false,false,false,false,false,false,false,
         false,false,false,false,false,false,false,false,false],
         sf9: [8,8,8,8,8,8,8,8,8],
         sb9: [8,8,8,8,8,8,8,8,8] },
-    {tag: "PGA", wins: 0, bonus: 0, skins: 0, tsf9: 0, tsb9: 0, tsr18: 0, 
+    {utilkey: "sgt-when-where", 
+    tag: "PGA", wins: 0, bonus: 0, skins: 0, tsf9: 0, tsb9: 0, tsr18: 0, 
     hw: [false,false,false,false,false,false,false,false,false,
         false,false,false,false,false,false,false,false,false],
         sf9: [8,8,8,8,8,8,8,8,8],
         sb9: [8,8,8,8,8,8,8,8,8] },
-    {tag: "Buggers", wins: 0, bonus: 0, skins: 0, tsf9: 0, tsb9: 0, tsr18: 0, 
+    {utilkey: "sgt-when-where", 
+    tag: "Buggers", wins: 0, bonus: 0, skins: 0, tsf9: 0, tsb9: 0, tsr18: 0, 
     hw: [false,false,false,false,false,false,false,false,false,
         false,false,false,false,false,false,false,false,false],
         sf9: [8,8,8,8,8,8,8,8,8],
         sb9: [8,8,8,8,8,8,8,8,8] },
-    {tag: "Mango", wins: 0, bonus: 0, skins: 0, tsf9: 0, tsb9: 0, tsr18: 0, 
+    {utilkey: "sgt-when-where", 
+    tag: "Mango", wins: 0, bonus: 0, skins: 0, tsf9: 0, tsb9: 0, tsr18: 0, 
     hw: [false,false,false,false,false,false,false,false,false,
         false,false,false,false,false,false,false,false,false],
         sf9: [8,8,8,8,8,8,8,8,8],

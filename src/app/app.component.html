@@ -1,9 +1,22 @@
-
-<nav>
 <h3> <img mat-card-avatar 
-src="https://media.istockphoto.com/vectors/vector-cartoon-of-happy-golf-ball-with-clubs-and-cart-vector-id486710150"  alt="Golf">    
- Social Golf Tribe - Skins Match </h3>
-<hr>
+	src="https://media.istockphoto.com/vectors/vector-cartoon-of-happy-golf-ball-with-clubs-and-cart-vector-id486710150"  alt="Golf">    
+	 Social Golf Tribe - Skins Event </h3>
+	<hr>
+<mat-grid-list cols="12" rowHeight="40px">
+<mat-grid-tile [colspan]="1"  [rowspan]="1">  </mat-grid-tile>
+<mat-grid-tile [colspan]="5"  [rowspan]="1"> 
+<mat-form-field >
+<input  type="text"   [(ngModel)]="match.when"  matInput placeholder="When: " />
+</mat-form-field>   
+</mat-grid-tile>
+<mat-grid-tile [colspan]="5"  [rowspan]="1"> 
+<mat-form-field >
+<input  type="text"   [(ngModel)]="match.where"  matInput placeholder="Where: " />
+</mat-form-field>   
+</mat-grid-tile>
+</mat-grid-list>
+	
+<nav>
 <h4>TEAMS:: </h4> 
 
 	<mat-grid-list cols="12" rowHeight="20px">
