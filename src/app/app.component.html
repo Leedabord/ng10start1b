@@ -1,3 +1,5 @@
+<!-- nav> </nav -->
+
 <h3> <img mat-card-avatar 
 	src="https://media.istockphoto.com/vectors/vector-cartoon-of-happy-golf-ball-with-clubs-and-cart-vector-id486710150"  alt="Golf">    
 	 Social Golf Tribe - Skins Event </h3>
@@ -14,9 +16,7 @@
 </mat-form-field>   
 </mat-grid-tile>
 </mat-grid-list>
-<hr>
 
-<nav>
 <h4>TEAMS:: </h4> 
 
 <mat-grid-list cols="12" rowHeight="20px">
@@ -32,14 +32,10 @@
 </mat-grid-list>
 
 <hr>
-<p> </p>
-</nav>
 
 <router-outlet></router-outlet>
 
-<div  *ngFor="let tt of Teams; let ii = index" > 
-
-	<mat-card>
+<mat-card  *ngFor="let tt of Teams; let ii = index" >
 <mat-card-content>
 
 <p> </p>
@@ -100,5 +96,3 @@
 
 </mat-card-content>
 </mat-card>
-
-</div>
