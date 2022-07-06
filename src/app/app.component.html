@@ -15,11 +15,11 @@
 </mat-grid-tile>
 </mat-grid-list>
 <hr>
-	
+
 <nav>
 <h4>TEAMS:: </h4> 
 
-	<mat-grid-list cols="12" rowHeight="20px">
+<mat-grid-list cols="12" rowHeight="20px">
 	<mat-grid-tile  *ngFor="let tt of Teams; let ii = index" 
 	 [colspan]="3"  [rowspan]="1">
 	<button mat-raised-button  color="primary" 
@@ -31,8 +31,8 @@
 	</mat-grid-tile>
 </mat-grid-list>
 
-	<hr>
-	<p> </p>
+<hr>
+<p> </p>
 </nav>
 
 <router-outlet></router-outlet>
