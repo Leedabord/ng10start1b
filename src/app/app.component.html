@@ -23,7 +23,7 @@
 	<mat-grid-tile  *ngFor="let tt of Teams; let ii = index" 
 	 [colspan]="3"  [rowspan]="1">
 	<button mat-raised-button  color="primary" 
-	routerLink="/crisis-list"
+	routerLink="/heroes-list"
 	routerLinkActive="activebutton"
 	(click)="tempfn()">
 	{{ii+1}} {{tt.tag}} 
@@ -37,14 +37,9 @@
 
 <router-outlet></router-outlet>
 
-<div style="display: none;">
-<!-- This HTML represents the initial state for the tutorial. It is not intended to appear in the app. -->
-<app-crisis-list></app-crisis-list>
-<app-heroes-list></app-heroes-list>
-</div>
-
 <div  *ngFor="let tt of Teams; let ii = index" > 
-<mat-card>
+
+	<mat-card>
 <mat-card-content>
 
 <p> </p>
@@ -75,6 +70,7 @@
 	</mat-grid-tile>
 	</mat-grid-list>
 		<hr> 
+
 
 		<mat-grid-list cols="12" rowHeight="80px">
 		<span  *ngFor="let xss of tt.sf9; let jj = index" >  
