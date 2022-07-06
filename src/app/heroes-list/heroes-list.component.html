@@ -1,6 +1,70 @@
 <h3>HEROES</h3>
 <p>Get your heroes here</p>
 
+<div  *ngFor="let tt of Teams; let ii = index" > 
+<mat-card>
+<mat-card-content>
+
+<p> </p>
+
+<mat-accordion >
+	<mat-expansion-panel >
+		<mat-expansion-panel-header>
+			<mat-panel-title>
+				<button  mat-raised-button  color="warn"  > {{ tt.tag }} </button>
+			</mat-panel-title>
+
+			<mat-panel-description >
+			<mat-chip-list>
+			<mat-chip color="accent" selected>  {{ tt.wins }}   </mat-chip>
+			</mat-chip-list>
+			</mat-panel-description>
+		</mat-expansion-panel-header>
+
+		<mat-grid-list cols="12" rowHeight="40px">
+		<mat-grid-tile  [colspan]="4"  [rowspan]="1">
+			<span> &nbsp; </span>
+		</mat-grid-tile>
+		<mat-grid-tile  [colspan]="4"  [rowspan]="1">
+			<span> &nbsp; </span>
+		</mat-grid-tile>
+		<mat-grid-tile  [colspan]="4"  [rowspan]="1">
+		<button mat-raised-button  color="primary"  (click)="tempfn()">Post Score</button> 
+	</mat-grid-tile>
+	</mat-grid-list>
+		<hr> 
+
+		<mat-grid-list cols="12" rowHeight="80px">
+		<span  *ngFor="let xss of tt.sf9; let jj = index" >  
+		<mat-grid-tile  [colspan]="4"  [rowspan]="1">
+		<mat-form-field  class="in30px">
+		<input  type="number"   [(ngModel)]="tt.sf9[jj]"  matInput placeholder="h# {{jj+1}}" />
+		</mat-form-field>   
+		</mat-grid-tile>
+		</span> 
+		</mat-grid-list>
+		<hr> 
+
+		<mat-grid-list cols="12" rowHeight="80px">
+		<span  *ngFor="let xss of tt.sb9; let jj = index" >  
+		<mat-grid-tile  [colspan]="4"  [rowspan]="1">
+		<mat-form-field  class="in30px">
+		<input  type="number"   [(ngModel)]="tt.sb9[jj]"  matInput placeholder="h# {{jj+10}}" />
+		</mat-form-field>   
+		</mat-grid-tile>
+		</span> 
+		</mat-grid-list>
+		<hr> 
+
+</mat-expansion-panel>
+</mat-accordion>
+
+
+</mat-card-content>
+</mat-card>
+
+</div>
+
 <!-- 
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
