@@ -4,14 +4,15 @@
 	src="https://media.istockphoto.com/vectors/vector-cartoon-of-happy-golf-ball-with-clubs-and-cart-vector-id486710150"  alt="Golf">    
 	 Social Golf Tribe - Skins Event </h3>
 <mat-grid-list cols="12" rowHeight="40px">
-<mat-grid-tile [colspan]="1"  [rowspan]="1">  </mat-grid-tile>
-<mat-grid-tile [colspan]="5"  [rowspan]="1"> 
-<mat-form-field >
-<input  type="text"   [(ngModel)]="match.when"  matInput placeholder="When: " />
+<mat-grid-tile [colspan]="1"  [rowspan]="1"> 
+</mat-grid-tile>
+<mat-grid-tile [colspan]="4"  [rowspan]="1"> 
+<mat-form-field  class="in120px">
+<input  type="date"   [(ngModel)]="match.when"  matInput placeholder="When: " />
 </mat-form-field>   
 </mat-grid-tile>
-<mat-grid-tile [colspan]="5"  [rowspan]="1"> 
-<mat-form-field >
+<mat-grid-tile [colspan]="6"  [rowspan]="1"> 
+<mat-form-field  class="in120px">
 <input  type="text"   [(ngModel)]="match.where"  matInput placeholder="Where: " />
 </mat-form-field>   
 </mat-grid-tile>

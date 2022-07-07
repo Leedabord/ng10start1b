@@ -83,7 +83,15 @@ input[type="text"] {
   width: 100%;
   padding: .5rem;
 }
-
+.in120px {
+  width: 120px;
+}
+.in50px {
+  width: 50px;
+}
+.in30px {
+  width: 30px;
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.
