@@ -24,7 +24,7 @@
 	<mat-grid-tile  *ngFor="let tt of Teams; let ii = index" 
 	 [colspan]="3"  [rowspan]="1">
 	<button mat-raised-button  color="primary" 
-	routerLink="/heroes-list"
+	routerLink="/crisis-list"
 	routerLinkActive="activebutton"
 	(click)="tempfn()">
 	{{ii+1}} {{tt.tag}} 
