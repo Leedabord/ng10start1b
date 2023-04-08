@@ -1,6 +1,7 @@
 import { Component, VERSION, Optional, OnInit, OnDestroy } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import {MatChipsModule} from '@angular/material/chips';
 import { SessionService } from './services/session.service'
 import { Subscription } from 'rxjs';
 

@@ -53,9 +53,11 @@
 			</mat-panel-title>
 
 			<mat-panel-description >
-			<mat-chip-list>
-			<mat-chip color="accent" selected>  {{ tt.wins }}   </mat-chip>
-			</mat-chip-list>
+				<mat-chip-set role="list">
+				<mat-chip role="listitem"> Sugar </mat-chip>
+				<mat-chip role="listitem"> Spice </mat-chip>
+				<mat-chip role="listitem"> Everything Nice </mat-chip>
+				</mat-chip-set>	
 			</mat-panel-description>
 		</mat-expansion-panel-header>
 
@@ -71,7 +73,6 @@
 	</mat-grid-tile>
 	</mat-grid-list>
 		<hr> 
-
 
 		<mat-grid-list cols="12" rowHeight="80px">
 		<span  *ngFor="let xss of tt.sf9; let jj = index" >  
