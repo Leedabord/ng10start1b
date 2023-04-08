@@ -69,7 +69,6 @@ export class PostService {
     )
   }
     
-    
   errorHandler(error:any) {
     let errorMessage = '';
     if(error.error instanceof ErrorEvent) {
@@ -78,5 +77,5 @@ export class PostService {
       errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
     }
     return throwError(errorMessage);
- }
+  }
 }
