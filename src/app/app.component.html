@@ -5,20 +5,6 @@
 	<span> &nbsp; &nbsp; &nbsp; </span>
 	Social Golf Tribe - Skins Event 
 </mat-toolbar>
-<mat-grid-list cols="12" rowHeight="40px">
-<mat-grid-tile [colspan]="1"  [rowspan]="1"> 
-</mat-grid-tile>
-<mat-grid-tile [colspan]="4"  [rowspan]="1"> 
-<mat-form-field  class="in120px">
-<input  type="date"   [(ngModel)]="match.when"  matInput placeholder="When: " />
-</mat-form-field>   
-</mat-grid-tile>
-<mat-grid-tile [colspan]="6"  [rowspan]="1"> 
-<mat-form-field  class="in120px">
-<input  type="text"   [(ngModel)]="match.where"  matInput placeholder="Where: " />
-</mat-form-field>   
-</mat-grid-tile>
-</mat-grid-list>
 
 <h4>TEAMS:: </h4> 
 
@@ -36,7 +22,23 @@
 
 <hr>
 
-<router-outlet></router-outlet>
+<!-- router-outlet></router-outlet -->
+<!-- 
+	<mat-grid-list cols="12" rowHeight="40px">
+	<mat-grid-tile [colspan]="1"  [rowspan]="1"> 
+	</mat-grid-tile>
+	<mat-grid-tile [colspan]="4"  [rowspan]="1"> 
+	<mat-form-field  class="in120px">
+	<input  type="date"   [(ngModel)]="match.when"  matInput placeholder="When: " />
+	</mat-form-field>   
+	</mat-grid-tile>
+	<mat-grid-tile [colspan]="6"  [rowspan]="1"> 
+	<mat-form-field  class="in120px">
+	<input  type="text"   [(ngModel)]="match.where"  matInput placeholder="Where: " />
+	</mat-form-field>   
+	</mat-grid-tile>
+	</mat-grid-list> 
+-->
 
 <mat-card  *ngFor="let tt of Teams; let ii = index" >
 <mat-card-content>
