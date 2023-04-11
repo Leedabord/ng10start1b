@@ -82,11 +82,6 @@
 		</mat-form-field>   
 		</mat-grid-tile>
 		</span> 
-		<mat-form-field appearance="outline" class="form-element">
-			<mat-label>First Name</mat-label>
-			<input matInput  [(ngModel)] ="tt.tag" />
-		</mat-form-field>
-
 		</mat-grid-list>
 
 		<div>
@@ -98,16 +93,10 @@
 
 		<div>
 			<mat-form-field appearance="outline" class="form-element">
-				<mat-label>Last Name</mat-label>
-				<input matInput [(ngModel)] ="tt.tag"/>
-			</mat-form-field>
-		</div>
-		<div>
-			<mat-form-field appearance="outline" class="form-element">
-				<mat-label>Gender</mat-label>
+				<mat-label>League</mat-label>
 				<mat-select [(ngModel)] ="tt.tag">
-					<mat-option value="Male">Male</mat-option>
-					<mat-option value="Female">Female</mat-option>
+					<mat-option value="PGA">PGA</mat-option>
+					<mat-option value="LIV">LIV</mat-option>
 				</mat-select>
 			</mat-form-field>
 		</div>
