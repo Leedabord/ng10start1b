@@ -39,7 +39,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
   color: black;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 1rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
@@ -82,18 +82,25 @@ input[type="text"] {
   box-sizing: border-box;
   width: 100%;
   padding: .5rem;
+  font-size: .5rem;
 }
 .in120px {
   width: 120px;
+  font-size: .8rem;
 }
 .in80px {
   width: 80px;
+  font-size: 1rem;
+  font-weight: bolder;
 }
 .in50px {
   width: 50px;
+  font-size: 1rem;
+  font-weight: bolder;
 }
 .in30px {
   width: 30px;
+  font-size: .8rem;
 }
 
 /*

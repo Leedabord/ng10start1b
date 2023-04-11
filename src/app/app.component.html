@@ -77,7 +77,7 @@
 		<mat-grid-list cols="12" rowHeight="80px">
 		<span  *ngFor="let xss of tt.sf9; let jj = index" >  
 		<mat-grid-tile  [colspan]="4"  [rowspan]="1">
-		<mat-form-field  class="in30px">
+		<mat-form-field  class="in80px">
 		<input  type="number"   [(ngModel)]="tt.sf9[jj]"  matInput placeholder="h# {{jj+1}}" />
 		</mat-form-field>   
 		</mat-grid-tile>
@@ -90,8 +90,8 @@
 			<mat-grid-tile  [colspan]="4"  [rowspan]="1">
 				<mat-form-field appearance="outline"   class="in80px">
 					<mat-label>h# {{jj+1}}</mat-label>
-					<mat-select [(ngModel)] ="tt.tag"  class="in80px">
-						<mat-option value="PGA">P</mat-option>
+					<mat-select [(ngModel)] ="tt.tag"  class="in50px">
+						<mat-option value="h# {{jj+1}}">h# {{jj+1}}</mat-option>
 						<mat-option value="LIV">L</mat-option>
 					</mat-select>
 				</mat-form-field>
