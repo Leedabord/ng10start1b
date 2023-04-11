@@ -82,7 +82,18 @@
 		</mat-form-field>   
 		</mat-grid-tile>
 		</span> 
-		</mat-grid-list>
+	</mat-grid-list>
+	<hr> 
+
+	<mat-grid-list cols="12" rowHeight="80px">
+	<mat-form-field appearance="outline" class="form-element">
+			<mat-label>League</mat-label>
+			<mat-select [(ngModel)] ="tt.tag">
+				<mat-option value="PGA">PGA</mat-option>
+				<mat-option value="LIV">LIV</mat-option>
+			</mat-select>
+		</mat-form-field>
+	</mat-grid-list>
 
 		<div>
 			<mat-form-field appearance="outline" class="form-element">
