@@ -139,6 +139,7 @@ export class AppComponent  implements OnInit, OnDestroy {
   }
 
   tempfn() { 
+    console.log("tempfn:: ", Date.now(), " ", this.Teams[1].sf9[2]);
     let skinpot = 0; let sf9 = 0;
   
     for (let ii = 0; ii < 9; ii++) {
