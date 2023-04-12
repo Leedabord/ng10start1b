@@ -90,8 +90,7 @@
 			<mat-grid-tile  [colspan]="4"  [rowspan]="1">
 				<mat-form-field appearance="outline"   class="in80px">
 					<mat-label>h# {{jj+1}}</mat-label>
-					<mat-select [(ngModel)] ="tt.tag"  class="in50px">
-						<mat-option value="">h# {{jj+1}}</mat-option>
+					<mat-select [(ngModel)] ="tt.sf9[jj]"  class="in50px">
 						<mat-option value=1>1</mat-option>
 						<mat-option value=2>2</mat-option>
 						<mat-option value=3>3</mat-option>
