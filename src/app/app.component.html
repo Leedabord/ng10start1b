@@ -120,8 +120,8 @@
 		<mat-grid-list cols="12" rowHeight="80px">
 		<span  *ngFor="let xss of tt.sb9; let jj = index" >  
 		<mat-grid-tile  [colspan]="4"  [rowspan]="1">
-		<mat-form-field  class="in30px">
-		<input  type="number"   [(ngModel)]="tt.sb9[jj]"  matInput placeholder="h# {{jj+10}}" />
+			<mat-form-field  class="in80px">
+				<input  type="number"   [(ngModel)]="tt.sb9[jj]"  matInput placeholder="h# {{jj+10}}" />
 		</mat-form-field>   
 		</mat-grid-tile>
 		</span> 
